@@ -74,11 +74,11 @@ retail-analysis/
 ## Output
 
 1. Results are saved to PostgreSQL tables:
-   - `customer_order_summary`
+   - `country_order_summary`
    - `churn_retention_analysis`
 
 2. CSV files are generated in the `data/` directory:
-   - `customer_order_summary.csv`
+   - `country_order_summary.csv`
    - `churn_retention_analysis.csv`
 
 ## Dependencies
