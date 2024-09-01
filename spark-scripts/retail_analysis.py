@@ -34,7 +34,7 @@ def main():
     # Remove Quantities below 0 and Unit Price below 0
     df = df.filter((col("Quantity") > 0) & (col("UnitPrice") > 0))
 
-    # Aggregation analysis
+    # Aggregate the total spending by Each Country 
     country_order_summary = df.groupBy("Country") \
         .agg(count("InvoiceNo").alias("total_orders"),
              sum(col("Quantity") * col("UnitPrice")).alias("total_spent"))
@@ -74,7 +74,7 @@ def main():
     )
 
     # Output results
-    print("Customer Order Summary:")
+    print("Country Order Summary:")
     country_order_summary.show()
     
     print("Churn-Retention Analysis:")
