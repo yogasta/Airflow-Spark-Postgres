@@ -6,11 +6,14 @@ This project performs retail data analysis using Apache Spark and schedules the 
 
 To get the project up and running quickly, use the following Makefile commands:
 
-bash
-
-Copy
-
-`# Build and start all necessary Docker containers make docker-build make spark make jupyter make postgres make airflow`
+```bash
+# Build and start all necessary Docker containers
+make docker-build
+make spark
+make jupyter
+make postgres
+make airflow
+```
 
 These commands will set up the entire environment, including Spark, Jupyter, PostgreSQL, and Airflow in Docker containers.
 
