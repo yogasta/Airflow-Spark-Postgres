@@ -2,6 +2,18 @@
 
 This project performs retail data analysis using Apache Spark and schedules the analysis job using Apache Airflow. It processes retail transaction data stored in a PostgreSQL database, performs various analyses, and saves the results back to the database and as CSV files.
 
+## Quick Start
+
+To get the project up and running quickly, use the following Makefile commands:
+
+bash
+
+Copy
+
+`# Build and start all necessary Docker containers make docker-build make spark make jupyter make postgres make airflow`
+
+These commands will set up the entire environment, including Spark, Jupyter, PostgreSQL, and Airflow in Docker containers.
+
 ## Project Structure
 
 ```
